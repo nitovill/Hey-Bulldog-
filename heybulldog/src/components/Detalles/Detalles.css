@@ -1,0 +1,8 @@
+.Mostrador{display: flex;
+align-items: center;
+flex-direction: column;
+font-family: verdana;
+color: purple;}
+.foto{
+    width: auto;
+}

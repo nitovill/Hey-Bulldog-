@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route } from "react-router-dom";
+import ButtonHome from "./components/ButtonHome/ButtonHome.jsx";
+import Home2 from "./components/Home/Home";
+import Detalles from "./components/Detalles/Detalles";
+import Crear from "./components/Crear/Crear";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path="/" component={ButtonHome} />
+      <Route exact path="/home" component={Home2} />
+      <Route
+        exact
+        path="/home/:PerroId"
+        render={({ match }) => <Detalles perro={match.params.PerroId} />}
+      />
+      <Route exact path="/crear" component={Crear} />
     </div>
   );
 }
