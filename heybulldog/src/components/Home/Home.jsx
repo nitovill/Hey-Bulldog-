@@ -15,9 +15,11 @@ const Navbar = ({ getTemperaments, getDogs }) => {
     <>
       <Filtros />
       <hr />
-      <a href="http://localhost:3000/crear">
-        <button className="botones">Crear</button>
-      </a>
+      <div style={{ paddingBottom: "13px" }}>
+        <a href="http://localhost:3000/crear">
+          <button className="botones">Crear</button>
+        </a>
+      </div>
 
       <Buscador />
     </>

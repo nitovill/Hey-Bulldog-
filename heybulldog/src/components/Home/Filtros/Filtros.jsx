@@ -16,7 +16,7 @@ const Filtros = () => {
         <div className="divSB">
           <SearchBar />
         </div>
-        <h5 style={{ color: "white" }}>Filters and sorting </h5>
+        <h5 style={{ color: "white", padding: "3px" }}>Filters and sorting </h5>
         <div style={{ display: "flex" }}>
           <div
             style={{
