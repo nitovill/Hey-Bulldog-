@@ -6,6 +6,7 @@ import "./Crear.css";
 import homeimg from "../../assets/images/Imagen22.png";
 import Card from "../Home/Card";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Crear(props) {
   const [dog, setDog] = useState({
@@ -38,6 +39,14 @@ function Crear(props) {
     };
     console.log(newDog);
     axios.post("http://localhost:3001/dogs", newDog).then((res) => {
+      Swal.fire({
+        title: "Saved!",
+        text: "Your breed of dog was accepted!",
+        icon: "success",
+        background: "white",
+        confirmButtonColor: "#06141c",
+        iconColor: "#06141c",
+      });
       setDogcreado(res.data);
       setDog({
         name: "",
