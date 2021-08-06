@@ -23,7 +23,7 @@ const Temperamentos = ({
   };
   return (
     <select name="select" onChange={(e) => filtrar(e)}>
-      <option>Temperamento...</option>
+      <option>Temperaments...</option>
       {temperamentos.map((t) => (
         <option key={t.id} value={t.name}>
           {t.name}

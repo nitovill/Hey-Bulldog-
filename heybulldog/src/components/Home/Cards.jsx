@@ -19,8 +19,6 @@ function Cards({ dogs, actual, paginar }) {
   };
   return (
     <>
-      <button onClick={volver}>Ant</button>
-      <button onClick={aumentar}>Sig</button>
       <div className="cards">
         {Dogs &&
           Dogs.map((dog) => {
@@ -35,6 +33,14 @@ function Cards({ dogs, actual, paginar }) {
               />
             );
           })}
+      </div>
+      <div style={{ padding: "10px" }}>
+        <button className="botones" onClick={volver}>
+          Prev
+        </button>
+        <button className="botones" onClick={aumentar}>
+          Next
+        </button>
       </div>
     </>
   );

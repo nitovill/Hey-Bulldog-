@@ -1,0 +1,54 @@
+.Filters {
+  display: flex;
+}
+.divImg {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.divImg img {
+  width: 70%;
+}
+.divSB {
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+.search-box {
+  background-color: #2f3640;
+  height: 40px;
+  width: 300px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn {
+  color: #f55139;
+  float: right;
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #2f3640;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+}
+.botones {
+  background: #06141c;
+  align-content: normal;
+  color: #f55139;
+
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+}

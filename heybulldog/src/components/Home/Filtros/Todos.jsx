@@ -7,7 +7,11 @@ const Todos = ({ getDogs, paginar }) => {
     getDogs();
     paginar(0);
   };
-  return <button onClick={traertodos}>Todos</button>;
+  return (
+    <button className="botones" onClick={traertodos}>
+      All
+    </button>
+  );
 };
 
 function mapDispatchToProps(dispatch) {

@@ -7,7 +7,11 @@ function Creados({ getDogsDB, paginar }) {
     paginar(0);
     getDogsDB();
   };
-  return <button onClick={() => traerDB()}>Creados</button>;
+  return (
+    <button className="botones" onClick={() => traerDB()}>
+      Created
+    </button>
+  );
 }
 
 function mapDispatchToProps(dispatch) {

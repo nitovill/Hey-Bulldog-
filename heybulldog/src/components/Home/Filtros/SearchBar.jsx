@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { getdogsbyname, Paginar } from "../../../actions";
 import { connect } from "react-redux";
+import "./SearchBar.css";
 
 const SearchBar = ({ getDogsbyName, paginar }) => {
   const [name, setName] = useState("");
@@ -14,14 +15,17 @@ const SearchBar = ({ getDogsbyName, paginar }) => {
     paginar(0);
   };
   return (
-    <form className="formulario" onSubmit={(e) => handleSubmit(e)}>
+    <form className="search-box" onSubmit={(e) => handleSubmit(e)}>
       <input
         type="search"
-        placeholder="Perro..."
+        placeholder="Find..."
         onChange={(e) => handleChange(e)}
         value={name}
+        className="search-txt"
       />
-      <button type="submit">Search</button>
+      <button className="search-btn" type="submit">
+        Search
+      </button>
     </form>
   );
 };

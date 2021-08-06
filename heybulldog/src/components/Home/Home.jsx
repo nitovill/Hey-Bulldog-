@@ -14,10 +14,11 @@ const Navbar = ({ getTemperaments, getDogs }) => {
   return (
     <>
       <Filtros />
-      <a href="http://localhost:3000/crear">
-        <button>Crear</button>
-      </a>
       <hr />
+      <a href="http://localhost:3000/crear">
+        <button className="botones">Crear</button>
+      </a>
+
       <Buscador />
     </>
   );

@@ -21,10 +21,18 @@ function Ordenar({ getDogs, paginar }) {
   };
   return (
     <>
-      <button onClick={traer_pesados}>Pesados</button>
-      <button onClick={traer_livianos}>Livianos</button>
-      <button onClick={traer_AZ}>A-Z</button>
-      <button onClick={traer_ZA}>Z-A</button>
+      <button onClick={traer_pesados} className="botones">
+        Heavy
+      </button>
+      <button onClick={traer_livianos} className="botones">
+        Light
+      </button>
+      <button onClick={traer_AZ} className="botones">
+        A-Z
+      </button>
+      <button onClick={traer_ZA} className="botones">
+        Z-A
+      </button>
     </>
   );
 }
