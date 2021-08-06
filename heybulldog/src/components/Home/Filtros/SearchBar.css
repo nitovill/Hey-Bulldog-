@@ -69,6 +69,9 @@
   padding: 0 0.5em;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
+  padding-left: 22px;
+  width: 160px;
 }
 .temp::-ms-expand {
   display: none;
@@ -78,7 +81,7 @@
   display: flex;
   width: 11em;
   background: #2f3640;
-  height: 2em;
+  height: 1em;
   line-height: 2;
   overflow: hidden;
   border-radius: 10px;

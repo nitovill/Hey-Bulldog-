@@ -30,7 +30,7 @@ function Card({ name, id, image, reference_image_id, temperaments }) {
         <h4 className="titulo">{name}</h4>
         <p className="temperaments">{temperaments}</p>
       </div>
-      <a href={"http://localhost:3000/home/" + id}>Detalles</a>
+      <a href={"http://localhost:3000/home/" + id}>Details </a>
     </div>
   );
 }

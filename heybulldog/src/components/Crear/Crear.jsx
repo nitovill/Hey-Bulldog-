@@ -64,9 +64,11 @@ function Crear(props) {
           <img style={{ width: "25%" }} src={homeimg} alt="" />
         </Link>
       </div>
-      <div>
+      <div style={{ padding: "20px" }}>
         <select className="temp" name="temperaments" onChange={setTemperament}>
-          <option>seleccionar...</option>
+          <option selected disabled>
+            Temperaments...
+          </option>
           {props.temperaments.map((t) => (
             <option key={t.id} value={t.id}>
               {t.name}
@@ -76,7 +78,7 @@ function Crear(props) {
         <input
           className="botones"
           type="text"
-          placeholder="Nombre"
+          placeholder="Name"
           name="name"
           required
           value={dog.name}
@@ -85,7 +87,7 @@ function Crear(props) {
         <input
           type="text"
           className="botones"
-          placeholder="weight"
+          placeholder="Weight"
           name="weight"
           value={dog.weight}
           onChange={onInputChange}
@@ -94,7 +96,7 @@ function Crear(props) {
         <input
           type="height"
           className="botones"
-          placeholder="height"
+          placeholder="Height"
           name="height"
           value={dog.height}
           onChange={onInputChange}
@@ -103,7 +105,7 @@ function Crear(props) {
         <input
           type="text"
           className="botones"
-          placeholder="años de vida..."
+          placeholder="Years of life..."
           name="life_span"
           value={dog.life_span}
           onChange={onInputChange}
@@ -112,7 +114,7 @@ function Crear(props) {
         <input
           type="text"
           className="botones"
-          placeholder="image"
+          placeholder="Image"
           name="image"
           value={dog.image}
           onChange={onInputChange}
@@ -122,12 +124,9 @@ function Crear(props) {
 
       <form onSubmit={onSubmit}>
         <button className="botones" type="submit">
-          Guardar
+          Save
         </button>
       </form>
-      <a href="http://localhost:3000/home">
-        <button className="botones">Home</button>
-      </a>
 
       <div
         style={{
@@ -137,10 +136,11 @@ function Crear(props) {
         }}
       >
         <Card
-          name={dogcreado.name}
-          id={dogcreado.id}
-          image={dogcreado.image}
-          reference_image_id={dogcreado.reference_image_id}
+          name={dog.name}
+          id={dog.id}
+          image={dog.image}
+          reference_image_id={dog.reference_image_id}
+          temperaments={dog.temperaments}
         />
       </div>
     </div>
